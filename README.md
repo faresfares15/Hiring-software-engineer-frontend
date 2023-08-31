@@ -111,3 +111,8 @@ Implement a dark mode or customizable themes.
 **_Error Handling_**: Does the application provide meaningful feedback for user errors and handle issues during API requests?
 
 **_Optional Enhancements_**: Are any optional features or enhancements (caching, model selection, dark mode) implemented effectively?
+
+You can find some useful resources at:
+
+- [HuggingFace Inference API Quick Tour](https://huggingface.co/docs/api-inference/quicktour)
+- [HuggingFace Summarization Inference API](https://huggingface.co/docs/api-inference/detailed_parameters#summarization-task)
