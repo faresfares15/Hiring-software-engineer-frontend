@@ -68,7 +68,8 @@ You are tasked with developing the frontend of a web application that allows non
 Frontend: React/NextJS (or a frontend framework of your choice)
 No backend development is required for this test.
 Use the HuggingFace Summarization Inference API for text summarization.
-Tasks:
+
+**Tasks**:
 
 **Frontend Development**:
 
