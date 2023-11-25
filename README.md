@@ -1,4 +1,4 @@
-##  Frontend engineer test : HuggingFace Summarization Frontend Interface
+##  Frontend software engineer test : HuggingFace Summarization Frontend Interface
 
 **Project Overview**:
 You are tasked with developing the frontend of a web application that allows non-technical users to interact with the HuggingFace Summarization Inference API. The application should provide a user-friendly interface for users to input text, choose model parameters, and request summarization predictions. The goal is to create an intuitive and visually appealing frontend for this API.
