@@ -1,58 +1,76 @@
-##  Frontend engineer test : HuggingFace Summarization Frontend Interface
+#  Software engineer frontend test
 
-**Project Overview**:
-You are tasked with developing the frontend of a web application that allows non-technical users to interact with the HuggingFace Summarization Inference API. The application should provide a user-friendly interface for users to input text, choose model parameters, and request summarization predictions. The goal is to create an intuitive and visually appealing frontend for this API.
+The principal objective of this project is to evaluate the applicant's ability to learn new skills on the fly, build apealing user interfaces in adherence to best practices and colaborate with peer programers.
 
-**Technology Stack**:
+This project is about developing a frontend of a web application that allows non-technical users to interact with the HuggingFace Summarization Inference API. The application should provide a user-friendly interface for users to input text, choose model parameters, and request summarization predictions. The goal is to create an intuitive and visually appealing frontend for this API.
 
-Frontend: React/NextJS (or a frontend framework of your choice)
-No backend development is required for this test.
-Use the HuggingFace Summarization Inference API for text summarization.
+## How does this work ?
 
-**Tasks**:
+Below is a list of tasks that candidates concurently work on. If you deem your contribution to be complete, you can create a pull request. 
+The team will review your contribution and provide feedback. If its good your branch will be merged with the `main` branch.
+Tasks that are done will be ommited and new tasks will apear for others.
+Candidates with merged changes will be invited to pass an interview with the team.
 
-**Frontend Development**:
+## Who can apply ?
 
-Create a React/NextJS (or your preferred frontend framework) project for the Summarization Interface.
-Design and implement a user-friendly form that allows users to input text.
-Include options for users to select model parameters (e.g., summarization ratio, maximum length).
-Implement a button to trigger the request to the HuggingFace API.
-API Integration:
+Both students looking for an internship at BIGmama and professionals looking for a full-time position can apply.
 
-Integrate the HuggingFace Summarization Inference API into your frontend application.
-Make asynchronous API requests to the HuggingFace API when users submit their input.
-Display the summarization result from the API in a visually appealing format.
+## Tasks
 
-**User Experience**:
+- Create a React/NextJS project for the Summarization Interface.
+- Design and implement a user-friendly form that allows users to input text.
+- Include options for users to select model parameters (e.g., summarization ratio, maximum length).
+- Implement a button to trigger the request to the HuggingFace API.
+- Integrate the HuggingFace Summarization Inference API into your frontend application.
+- Make asynchronous API requests to the HuggingFace API when users submit their input.
+- Display the summarization result from the API in a visually appealing format.
+- Ensure that the user interface is intuitive and provides clear instructions on how to use the application.
+- Make the application responsive, ensuring it works well on both desktop and mobile devices.
+- Implement error handling to provide meaningful feedback for issues with user input or API requests.
+- Display clear error messages to the user in case of problems.
+- Implement client-side caching to save previously requested summaries for quick retrieval.
+- Allow users to switch between different summarization models if available in the HuggingFace API.
+- Add the option to summarize multiple paragraphs or documents.
+- Implement a dark mode or customizable themes.
 
-Ensure that the user interface is intuitive and provides clear instructions on how to use the application.
-Make the application responsive, ensuring it works well on both desktop and mobile devices.
+## Setup
 
-**Error Handling**:
+Clone the repository
+```bash
+git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.git 
+```
+## Contribution guidelines
 
-Implement error handling to provide meaningful feedback for issues with user input or API requests.
-Display clear error messages to the user in case of problems.
+- Docuement your code and add any necessary information to the README.md file
 
-**Optional Enhancements (Highly Appreciated)**:
+- Adhere to good UI|UX practices and make sure that the developed interface is responsive on various devices
 
-Implement client-side caching to save previously requested summaries for quick retrieval.
-Allow users to switch between different summarization models if available in the HuggingFace API.
-Add the option to summarize multiple paragraphs or documents.
-Implement a dark mode or customizable themes.
+- Make sure your code is the code well-organized, modular, and follows best practices for frontend development
 
-**Evaluation Criteria**:
+- Provide meaningful feedback for user errors and handle API requests errors gracefully
 
-**_Functionality_**: Does the Summarization Interface correctly interact with the HuggingFace API to provide summarization results?
+- Implement any enhancement (caching, model selection, dark mode ...) that you think will improve the user experience and increase performance
 
-**_User Interface_**: Is the user interface well-designed, user-friendly, and responsive on various devices?
+- Commit often and write meaningful commit messages.
 
-**_Code Quality_**: Is the code well-organized, modular, and follows best practices for frontend development?
+- Create a new branch with your name, push your code to it and create a pull request once you finish your contribution.
 
-**_Error Handling_**: Does the application provide meaningful feedback for user errors and handle issues during API requests?
+## Resources
 
-**_Optional Enhancements_**: Are any optional features or enhancements (caching, model selection, dark mode) implemented effectively?
-
-You can find some useful resources at:
+You can find some useful resources here:
 
 - [HuggingFace Inference API Quick Tour](https://huggingface.co/docs/api-inference/quicktour)
 - [HuggingFace Summarization Inference API](https://huggingface.co/docs/api-inference/detailed_parameters#summarization-task)
+
+## FAQ
+
+#### how many features should I work on ?
+doesn't matter, what important is the value of your contribution and it's quality, impress us !
+
+#### what if the task I am working on gets completed by someone else ?
+pick another task, and hurry up !
+
+#### what if I have a question ?
+open an issue and we will answer it as soon as possible !
+
+btawfiq inchalah
