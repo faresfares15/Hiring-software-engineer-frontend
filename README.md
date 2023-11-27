@@ -1,76 +1,73 @@
-#  Software engineer frontend test
+## Frontend Engineer Project: Real-Time Document Collaboration Platform
 
-The principal objective of this project is to evaluate the applicant's ability to learn new skills on the fly, build apealing user interfaces in adherence to best practices and colaborate with peer programers.
+Embark on the development journey to create a cutting-edge Real-Time Document Collaboration Platform. This project is tailored for frontend engineers seeking to enhance their skills in real-time collaboration, leveraging Liveblocks, Next.js, and Supabase. The objective is to build a platform where users can collaboratively edit documents seamlessly, incorporating user-friendly UI/UX practices and ensuring mobile-friendly accessibility.
 
-This project is about developing a frontend of a web application that allows non-technical users to interact with the HuggingFace Summarization Inference API. The application should provide a user-friendly interface for users to input text, choose model parameters, and request summarization predictions. The goal is to create an intuitive and visually appealing frontend for this API.
+### Objective
+Develop a robust platform allowing users to collaboratively edit documents in real-time. Utilize Liveblocks for live updates, Next.js for the frontend, and Supabase for user authentication and document storage.
 
-## How does this work ?
+## Who can Apply ?
+Ideal for developers passionate about real-time collaboration, this project welcomes enthusiasts keen on building interactive and collaborative web applications. If you're looking to refine your skills in Next.js and integrate technologies like Liveblocks and Supabase, this project is for you.
 
-Below is a list of tasks that candidates concurently work on. If you deem your contribution to be complete, you can create a pull request. 
-The team will review your contribution and provide feedback. If its good your branch will be merged with the `main` branch.
-Tasks that are done will be ommited and new tasks will apear for others.
-Candidates with merged changes will be invited to pass an interview with the team.
-
-## Who can apply ?
-
-Both students looking for an internship at BIGmama and professionals looking for a full-time position can apply.
 
 ## Tasks
 
-- Create a React/NextJS project for the Summarization Interface.
-- Design and implement a user-friendly form that allows users to input text.
-- Include options for users to select model parameters (e.g., summarization ratio, maximum length).
-- Implement a button to trigger the request to the HuggingFace API.
-- Integrate the HuggingFace Summarization Inference API into your frontend application.
-- Make asynchronous API requests to the HuggingFace API when users submit their input.
-- Display the summarization result from the API in a visually appealing format.
-- Ensure that the user interface is intuitive and provides clear instructions on how to use the application.
-- Make the application responsive, ensuring it works well on both desktop and mobile devices.
-- Implement error handling to provide meaningful feedback for issues with user input or API requests.
-- Display clear error messages to the user in case of problems.
-- Implement client-side caching to save previously requested summaries for quick retrieval.
-- Allow users to switch between different summarization models if available in the HuggingFace API.
-- Add the option to summarize multiple paragraphs or documents.
-- Implement a dark mode or customizable themes.
+### 1. Shared Document Editing
+   - Implement Liveblocks to enable real-time collaboration for synchronized document editing.
+   - Develop collaborative cursor tracking for an enhanced collaborative experience.
+
+### 2. User Presence Indicators
+   - Incorporate real-time indicators to display the presence of other users currently editing the document.
+
+### 3. User Authentication and Ownership
+   - Integrate Supabase for user authentication.
+   - Implement document ownership through Supabase for secure access and management.
+
+### 4. Mobile-Friendly Interface
+   - Ensure a responsive and intuitive UI for seamless document editing on various devices.
+
+### 5. UI/UX Best Practices
+   - Implement best practices in UI/UX design for an intuitive and visually pleasing editing experience.
+
 
 ## Setup
 
-Clone the repository
+Clone the repository:
 ```bash
-git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.git 
+git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.git
 ```
-## Contribution guidelines
 
-- Docuement your code and add any necessary information to the README.md file
+## Contribution Guidelines
 
-- Adhere to good UI|UX practices and make sure that the developed interface is responsive on various devices
+1. **Document Your Code:**
+   - Ensure comprehensive documentation of your code within the README.md file. Clearly explain the purpose and functionality of each component or module.
 
-- Make sure your code is the code well-organized, modular, and follows best practices for frontend development
+2. **Code Organization:**
+   - Adhere to best practices for frontend development, maintaining clean, modular, and well-organized code. Use appropriate folder structures to enhance code readability.
 
-- Provide meaningful feedback for user errors and handle API requests errors gracefully
+3. **Testing:**
+   - Implement thorough testing for collaborative features and user management to ensure the stability and reliability of the platform. Consider unit tests, integration tests, and end-to-end tests.
 
-- Implement any enhancement (caching, model selection, dark mode ...) that you think will improve the user experience and increase performance
+4. **Commit Regularly:**
+   - Commit your changes regularly with clear and descriptive commit messages. This helps in tracking the development progress and understanding the purpose of each commit.
 
-- Commit often and write meaningful commit messages.
-
-- Create a new branch with your name, push your code to it and create a pull request once you finish your contribution.
+5. **Collaboration:**
+   - Collaborate effectively with other team members. Participate in code reviews, provide constructive feedback, and work collectively to enhance the project's overall quality.
 
 ## Resources
 
-You can find some useful resources here:
-
-- [HuggingFace Inference API Quick Tour](https://huggingface.co/docs/api-inference/quicktour)
-- [HuggingFace Summarization Inference API](https://huggingface.co/docs/api-inference/detailed_parameters#summarization-task)
+- [Liveblocks Documentation](https://liveblocks.io/docs)
+- [Next.js Documentation](https://nextjs.org/docs) **PS:** Version 13 and up of nextjs is preferred (using the new app router).
+- [Supabase Documentation](https://supabase.com/docs)
 
 ## FAQ
 
-#### how many features should I work on ?
-doesn't matter, what important is the value of your contribution and it's quality, impress us !
+- **How should I approach collaborative cursor tracking?**
+  - Focus on creating a seamless collaborative experience by ensuring synchronized real-time editing with Liveblocks.
 
-#### what if the task I am working on gets completed by someone else ?
-pick another task, and hurry up !
+- **What if I encounter issues with Liveblocks or Supabase integration?**
+  - Open an issue, and the team will provide assistance promptly.
 
-#### what if I have a question ?
-open an issue and we will answer it as soon as possible !
+- **Can I propose additional features for document collaboration?**
+  - Absolutely! Feel free to enhance the project by proposing features that contribute to an enriched collaborative document editing experience.
 
-btawfiq inchalah
+*Embark on this journey to unlock the power of real-time document collaboration, reshape web development, and master user and database management with Supabase!*
