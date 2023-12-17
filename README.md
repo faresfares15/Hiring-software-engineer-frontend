@@ -62,6 +62,8 @@ git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.gi
 
 ## Resources
 
+- [Supabase playlist](https://www.youtube.com/watch?v=ydz7Dj5QHKY&list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
+- [Liveblocks Starter kit walkthrough](https://www.youtube.com/watch?v=Lf7HQ4Z_Ovc)
 - [Liveblocks Documentation](https://liveblocks.io/docs)
 - [Next.js Documentation](https://nextjs.org/docs) **PS:** Version 13 and up of nextjs is preferred (using the new app router).
 - [Supabase Documentation](https://supabase.com/docs)
