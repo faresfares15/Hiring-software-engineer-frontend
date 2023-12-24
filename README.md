@@ -18,21 +18,21 @@ Both students looking for an internship at BIGmama and professionals looking for
 
 ## Tasks
 
-#### 1. Shared Document Editing
+- [ ] Shared Document Editing
    - Implement Liveblocks to enable real-time collaboration for synchronized document editing.
    - Develop collaborative cursor tracking for an enhanced collaborative experience.
 
-#### 2. User Presence Indicators
+- [ ] User Presence Indicators
    - Incorporate real-time indicators to display the presence of other users currently editing the document.
 
-#### 3. User Authentication and Ownership
+- [ ] User Authentication and Ownership
    - Integrate Supabase for user authentication.
    - Implement document ownership through Supabase for secure access and management.
 
-#### 4. Mobile-Friendly Interface
+- [ ] Mobile-Friendly Interface
    - Ensure a responsive and intuitive UI for seamless document editing on various devices.
 
-#### 5. UI/UX Best Practices
+- [ ] UI/UX Best Practices
    - Implement best practices in UI/UX design for an intuitive and visually pleasing editing experience.
 
 
@@ -65,7 +65,7 @@ git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.gi
 - [Supabase playlist](https://www.youtube.com/watch?v=ydz7Dj5QHKY&list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
 - [Liveblocks Starter kit walkthrough](https://www.youtube.com/watch?v=Lf7HQ4Z_Ovc)
 - [Liveblocks Documentation](https://liveblocks.io/docs)
-- [Next.js Documentation](https://nextjs.org/docs) **PS:** Version 13 and up of nextjs is preferred (using the new app router).
+- [Next.js Documentation](https://nextjs.org/docs) `ps: Version 13 and up of nextjs is preferred (using the new app router).`
 - [Supabase Documentation](https://supabase.com/docs)
 
 ## FAQ
