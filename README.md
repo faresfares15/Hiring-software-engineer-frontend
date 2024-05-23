@@ -7,7 +7,7 @@ Develop a robust platform allowing users to collaboratively edit documents in re
 
 ## How does this work ?
 
-Below is a list of tasks that candidates concurently work on. If you deem your contribution to be complete, you can create a pull request. 
+Below is a list of tasks that candidates concurently work on. If you deem your contribution to be complete, you can create a pull request.
 The team will review your contribution and provide feedback. If its good your branch will be merged with the `main` branch.
 Tasks that are done will be ommited and new tasks will apear for others.
 Candidates with merged changes will be invited to pass an interview with the team.
@@ -19,21 +19,21 @@ Both students looking for an internship at BIGmama and professionals looking for
 ## Tasks
 
 - [ ] Shared Document Editing
-   - Implement Liveblocks to enable real-time collaboration for synchronized document editing.
-   - Develop collaborative cursor tracking for an enhanced collaborative experience.
+    - Implement Liveblocks to enable real-time collaboration for synchronized document editing.
+    - Develop collaborative cursor tracking for an enhanced collaborative experience.
 
 - [ ] User Presence Indicators
-   - Incorporate real-time indicators to display the presence of other users currently editing the document.
+    - Incorporate real-time indicators to display the presence of other users currently editing the document.
 
 - [ ] User Authentication and Ownership
-   - Integrate Supabase for user authentication.
-   - Implement document ownership through Supabase for secure access and management.
+    - Integrate Supabase for user authentication.
+    - Implement document ownership through Supabase for secure access and management.
 
 - [ ] Mobile-Friendly Interface
-   - Ensure a responsive and intuitive UI for seamless document editing on various devices.
+    - Ensure a responsive and intuitive UI for seamless document editing on various devices.
 
 - [ ] UI/UX Best Practices
-   - Implement best practices in UI/UX design for an intuitive and visually pleasing editing experience.
+    - Implement best practices in UI/UX design for an intuitive and visually pleasing editing experience.
 
 
 ## Setup
@@ -46,19 +46,19 @@ git clone git@github.com:BIGmama-technology/Hiring-software-engineer-frontend.gi
 ## Contribution Guidelines
 
 #### Document Your Code:
-   - Ensure comprehensive documentation of your code within the README.md file. Clearly explain the purpose and functionality of each component or module.
+- Ensure comprehensive documentation of your code within the README.md file. Clearly explain the purpose and functionality of each component or module.
 
 #### Code Organization:
-   - Adhere to best practices for frontend development, maintaining clean, modular, and well-organized code. Use appropriate folder structures to enhance code readability.
+- Adhere to best practices for frontend development, maintaining clean, modular, and well-organized code. Use appropriate folder structures to enhance code readability.
 
 #### Testing:
-   - Implement thorough testing for collaborative features and user management to ensure the stability and reliability of the platform. Consider unit tests, integration tests, and end-to-end tests.
+- Implement thorough testing for collaborative features and user management to ensure the stability and reliability of the platform. Consider unit tests, integration tests, and end-to-end tests.
 
 #### Commit Regularly:
-   - Commit your changes regularly with clear and descriptive commit messages. This helps in tracking the development progress and understanding the purpose of each commit.
+- Commit your changes regularly with clear and descriptive commit messages. This helps in tracking the development progress and understanding the purpose of each commit.
 
 #### Collaboration:
-   - Collaborate effectively with other team members. Participate in code reviews, provide constructive feedback, and work collectively to enhance the project's overall quality.
+- Collaborate effectively with other team members. Participate in code reviews, provide constructive feedback, and work collectively to enhance the project's overall quality.
 
 ## Resources
 
