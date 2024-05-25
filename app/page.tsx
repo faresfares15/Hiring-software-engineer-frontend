@@ -1,113 +1,70 @@
+"use client"
+import Head from "next/head";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Home() {
+    gsap.registerPlugin(useGSAP);
+
+    useGSAP(()=>{
+        gsap.from(".hero-text", { duration: 1.5, y: 30, opacity: 0, ease: "power4.out", stagger: 0.25 });
+        gsap.from(".hero-button", { duration: 1.5, y: 30, opacity: 0, ease: "power4.out", stagger: 0.25 });
+        gsap.fromTo(".note", { y: -20, opacity: 0 }, { duration: 1, y: 0, opacity: 1, ease: "bounce.out", stagger: 0.2 });
+    })
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        <Head>
+          <title>Home - Together Notes</title>
+        </Head>
+
+        <header className="bg-white shadow-md">
+            <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                <h1 className="text-xl font-bold text-gray-900">Together Notes</h1>
+                <nav>
+                    <Link href="/login"
+                       className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Login</Link>
+                </nav>
+            </div>
+        </header>
+
+          <main className="flex-grow flex items-center justify-center">
+              <div className="text-center p-8">
+                  <h2 className="hero-text text-4xl font-bold text-gray-900 mb-4">Welcome to Together Notes</h2>
+                  <p className="hero-text text-lg text-gray-700 mb-6">Collaborate seamlessly with your team in
+                      real-time.</p>
+                  <div className="flex justify-center space-x-4">
+                      <Link href="/docs"
+                            className="hero-button py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#2383E2] hover:bg-[#1a6bbf] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2383E2]">
+                          Get Started
+                      </Link>
+                      <Link href="/signup"
+                            className="hero-button py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-gray-900 bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                          Create an account
+                      </Link>
+                  </div>
+                  <div className="flex space-x-4 justify-center mt-4">
+                    <div className="note bg-white p-4 rounded-lg shadow-md transform rotate-3">
+                        <Image src="/icons/note.svg" alt="Note" width={64} height={64}/>
+                    </div>
+                    <div className="note bg-white p-4 rounded-lg shadow-md transform -rotate-3">
+                        <Image src="/icons/collab.svg" alt="Collab" width={64} height={64}/>
+                    </div>
+                    <div className="note bg-white p-4 rounded-lg shadow-md transform rotate-6">
+                        <Image src="/icons/pencil.svg" alt="Pencil" width={64} height={64}/>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+          <footer className="bg-white shadow-md">
+              <div className="container mx-auto px-6 py-4 text-center text-gray-700">
+                  © 2024 Together Notes. All rights reserved.
+              </div>
+          </footer>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
