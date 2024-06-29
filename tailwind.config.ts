@@ -22,6 +22,10 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      boxShadow: {
+        hoverButton: 'rgba(0, 0, 0, 0.16) 0 5px 8px 0, rgba(0, 0, 0, 0.04) 0 0 0 1px',
+        activeButton: "rgba(0, 0, 0, 0.16) 0 2px 3px 0,rgba(0, 0, 0, 0.04) 0 0 0 1px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

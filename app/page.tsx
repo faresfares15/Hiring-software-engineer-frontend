@@ -1,9 +1,9 @@
 "use client"
-import Head from "next/head";
-import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Link from "next/link";
+import gsap from 'gsap';
+import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -37,11 +37,11 @@ export default function Home() {
                   <p className="hero-text text-lg text-gray-700 mb-6">Collaborate seamlessly with your team in
                       real-time.</p>
                   <div className="flex justify-center space-x-4">
-                      <Link href="/docs"
+                      <Link href="/editor"
                             className="hero-button py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#2383E2] hover:bg-[#1a6bbf] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2383E2]">
                           Get Started
                       </Link>
-                      <Link href="/signup"
+                      <Link href="/login"
                             className="hero-button py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-gray-900 bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
                           Create an account
                       </Link>
